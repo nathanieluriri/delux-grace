@@ -65,8 +65,9 @@ export default function HomePage() {
             </h3>
             <p>
               Delux (Affiliate Platform) is government-approved, ensuring safety
-              and reliability for all users across Africa. Officially recognized, Delux meets all regulatory standards,
-              making our services secure and trustworthy for everyone.
+              and reliability for all users across Africa. Officially
+              recognized, Delux meets all regulatory standards, making our
+              services secure and trustworthy for everyone.
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
@@ -79,9 +80,9 @@ export default function HomePage() {
           />
         </div>
       </Container>
-      
+
       <Container className="flex flex-col gap-4">
-      <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
+        <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
           <FiClock /> Opportunities
         </Card>
         <Card className="flex flex-col lg:flex-row gap-5 items-center lg:items-start">
@@ -98,28 +99,29 @@ export default function HomePage() {
             </h3>
             <div className="space-y-3">
               <p>
-                <span className="text-amber-500">DELUX</span> platform offers different earning opportunities for its users:
-
-
+                <span className="text-amber-500">DELUX</span> platform offers
+                different earning opportunities for its users:
               </p>
               <p>
-                <span className="text-amber-500">1.</span> Over 20 different online job Opportunities for everyone. ( Pick anyone of your choice)
-
+                <span className="text-amber-500">1.</span> Over 20 different
+                online job Opportunities for everyone. ( Pick anyone of your
+                choice)
               </p>
               <p>
-                <span className="text-amber-500">2.</span> Over 10 Online Skills Development coming with Certificates
+                <span className="text-amber-500">2.</span> Over 10 Online Skills
+                Development coming with Certificates
               </p>
               <p>
-                <span className="text-amber-500">3.</span>Earn N2,500 (€1.50) from Watching Video Clips
-
+                <span className="text-amber-500">3.</span>Earn N2,500 (€1.50)
+                from Watching Video Clips
               </p>
               <p>
-                <span className="text-amber-500">4.</span>By streaming music, users earn N2,000 (€1.00) for each track, 
-
+                <span className="text-amber-500">4.</span>By streaming music,
+                users earn N2,000 (€1.00) for each track,
               </p>
               <p>
-                <span className="text-amber-500">5.</span> Earn N3,000 (€1.20) by sending reviews daily 
-
+                <span className="text-amber-500">5.</span> Earn N3,000 (€1.20)
+                by sending reviews daily
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -136,8 +138,6 @@ export default function HomePage() {
           </div>
         </Card>
       </Container>
-
-      
 
       <Container className="flex flex-col gap-6 justify-center items-center">
         <Card className="inline-flex items-center gap-3 mx-auto px-4 py-2">
