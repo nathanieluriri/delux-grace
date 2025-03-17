@@ -9,7 +9,7 @@ import { FiUserPlus } from "react-icons/fi";
 const Header = () => {
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   return (
-    <header className=" sticky top-0 bg-amber-900 z-50">
+    <header className=" sticky top-0 bg-black z-50">
       <Container className="flex justify-between py-2">
         <Link href="/">
           <Image
@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         <button
           onClick={() => setOpenRegisterModal(true)}
-          className="bg-amber-600 rounded-xl text-slate-50 px-3 py-2 flex justify-center items-center gap-2"
+          className="bg-amber-600 rounded-xl text-white px-3 py-2 flex justify-center items-center gap-2"
         >
           <FiUserPlus />
           Register

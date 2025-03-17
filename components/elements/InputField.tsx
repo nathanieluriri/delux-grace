@@ -128,9 +128,9 @@ const InputField: FC<InputFieldProps> = ({
   const listBoxButtonRef = useRef<any>(null);
   const comboBoxButtonRef = useRef<any>(null);
 
-  const baseClass = `w-full p-3 block text-nevada w-full rounded-xl !outline-[0.5px] outline-gray-700 focus:outline-amber-500 ${
-    startContent ? "rounded-l-none outline-amber-500 outline-l-none" : ""
-  } ${endContent ? "rounded-r-none outline-amber-500 outline-r-none" : ""}  ${
+  const baseClass = `w-full p-3 block text-nevada w-full rounded-xl !outline-[0.5px] outline-gray-700 focus:outline-black -500 ${
+    startContent ? "rounded-l-none outline-black -500 outline-l-none" : ""
+  } ${endContent ? "rounded-r-none outline-black -500 outline-r-none" : ""}  ${
     !!errorMessage
       ? "!bg-red-100 outline-red-500"
       : " !bg-transparent focus:!bg-transparent outline focus:!outline-secondary "
@@ -248,16 +248,16 @@ const InputField: FC<InputFieldProps> = ({
             >
               <ListboxButton
                 disabled={disabled}
-                className="group relative border flex justify-between items-center w-full focus:border-amber-500 rounded-xl p-2"
+                className="group relative border flex justify-between items-center w-full focus:border-black -500 rounded-xl p-2"
                 ref={listBoxButtonRef}
               >
                 {options?.find((each) => each.value == value)?.label ||
                   "Select..."}
-                <FaChevronDown className="text-amber-500" />
+                <FaChevronDown className="text-black -500" />
               </ListboxButton>
               <ListboxOptions
                 anchor="bottom"
-                className={`bg-transparent border transform translate-y-1 border-amber-500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 `}
+                className={`bg-transparent border transform translate-y-1 border-black -500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 `}
                 style={{
                   width: `${
                     listBoxButtonRef.current?.offsetWidth + "px" || ""
@@ -268,7 +268,7 @@ const InputField: FC<InputFieldProps> = ({
                   <ListboxOption
                     disabled
                     value=""
-                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-amber-500 data-[focus]:text-white hover:bg-amber-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-black -500 data-[focus]:text-white hover:bg-black -500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{placeholder}</div>
@@ -278,7 +278,7 @@ const InputField: FC<InputFieldProps> = ({
                   <ListboxOption
                     key={item.value}
                     value={item}
-                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-amber-500 data-[focus]:text-white hover:bg-amber-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-black -500 data-[focus]:text-white hover:bg-black -500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{item.label}</div>
@@ -293,7 +293,7 @@ const InputField: FC<InputFieldProps> = ({
           <>
             <Combobox value={value} onChange={onChange}>
               <div
-                className="relative border focus:border-amber-500 rounded-xl p-2 w-full"
+                className="relative border focus:border-black -500 rounded-xl p-2 w-full"
                 tabIndex={-1}
                 ref={comboBoxButtonRef}
               >
@@ -305,19 +305,19 @@ const InputField: FC<InputFieldProps> = ({
                   className={"border-0 outline-none bg-transparent w-full"}
                 />
                 <ComboboxButton className=" group absolute inset-y-0 right-0 my-1 px-2.5 border-l">
-                  <FaChevronDown className="text-amber-500" />
+                  <FaChevronDown className="text-black -500" />
                 </ComboboxButton>
               </div>
               <ComboboxOptions
                 anchor="bottom"
-                className="bg-transparent border border-amber-500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 w-inherit "
+                className="bg-transparent border border-black -500 rounded-xl [--anchor-gap:var(--spacing-1)] focus:outline-none transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0 w-inherit "
                 style={{ width: comboBoxButtonRef.current?.offsetWidth + "px" }}
               >
                 {filteredOptions?.map((item) => (
                   <ComboboxOption
                     key={item.value}
                     value={item.value}
-                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-amber-500 data-[focus]:text-white hover:bg-amber-500 hover:text-white cursor-pointer"
+                    className="group flex items-center gap-2 rounded-xl py-1.5 px-3 bg-transparent select-none data-[focus]:bg-black -500 data-[focus]:text-white hover:bg-black -500 hover:text-white cursor-pointer"
                   >
                     <FiCheck className="invisible size-4 group-data-[selected]:visible" />
                     <div className="text-sm/6 ">{item.label}</div>
@@ -331,7 +331,7 @@ const InputField: FC<InputFieldProps> = ({
         return (
           <Checkbox
             defaultChecked={defaultChecked}
-            className="p-0.5 rounded-md border cursor-pointer text-white data-[checked]:bg-amber-500"
+            className="p-0.5 rounded-md border cursor-pointer text-white data-[checked]:bg-black -500"
             disabled={disabled}
             color="secondary"
             checked={Boolean(value)}
@@ -408,7 +408,7 @@ const InputField: FC<InputFieldProps> = ({
               disabled={disabled}
               type="number"
               min={min}
-              className={`text-gray-700 p-2 w-full rounded-sm border border-amber-500`}
+              className={`text-gray-700 p-2 w-full rounded-sm border border-black -500`}
               placeholder={placeholder}
               {...register}
               defaultValue={
@@ -419,7 +419,7 @@ const InputField: FC<InputFieldProps> = ({
         );
       case "weight":
         return (
-          <div className="flex rounded-sm border border-amber-500">
+          <div className="flex rounded-sm border border-black -500">
             <input
               disabled={disabled}
               type="number"
@@ -452,7 +452,7 @@ const InputField: FC<InputFieldProps> = ({
           <input
             disabled={disabled}
             type="text"
-            className={`text-gray-700 p-2 w-full rounded-sm border border-amber-500 ${
+            className={`text-gray-700 p-2 w-full rounded-sm border border-black -500 ${
               !!errorMessage ? "border-red-400" : "focus:border-green-500"
             }`}
             {...register}
@@ -496,16 +496,16 @@ const InputField: FC<InputFieldProps> = ({
         type == "checkbox" ||
         type == "switch" ||
         renderLabelRight ? (
-          <p className={`order-2 text-amber-500 ${classNames.label}`}>
+          <p className={`order-2 text-black -500 ${classNames.label}`}>
             {label} {isRequired && <span className="text-red-700">*</span>}
           </p>
         ) : renderLabelLeft ? (
-          <p className={`order-1 text-amber-500 ${classNames.label}`}>
+          <p className={`order-1 text-black -500 ${classNames.label}`}>
             {label} {isRequired && <span className="text-red-700">*</span>}
           </p>
         ) : (
           <p>
-            <span className={`text-amber-500 ${classNames.label}`}>
+            <span className={`text-black -500 ${classNames.label}`}>
               {label}
             </span>
             {isRequired && <span className="text-red-700">*</span>}
@@ -519,7 +519,7 @@ const InputField: FC<InputFieldProps> = ({
           )}
           {renderInput()}
           {endContent && !["autocomplete", "password"].includes(type) && (
-            <div className="bg-gray-100 grid place-items-center p-2 rounded-r-lg border border-amber-500 text-nevada cursor-pointer">
+            <div className="bg-gray-100 grid place-items-center p-2 rounded-r-lg border border-black -500 text-nevada cursor-pointer">
               {endContent}
             </div>
           )}

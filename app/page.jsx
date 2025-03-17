@@ -26,7 +26,7 @@ export default function HomePage() {
             </h3>
             <div className="space-y-3">
               <p>
-                <span className="text-amber-500">DELUX</span> rrepresents
+                <span className="text-amber-500">DELUX</span> represents
                 elegancy, abundance, inclusive and stabilization. DELUX is a
                 global Affiliate assistant across Africa that helps different
                 individuals work from home and get paid at ease.
@@ -35,7 +35,7 @@ export default function HomePage() {
                 On <span className="text-amber-500">DELUX</span> we offer you
                 the opportunity to access different remote jobs here on our
                 platform easily! Here we empower you, stabilize you financially,
-                and make sure your financial independent and boyant.
+                and make sure your financial independent and boyant.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -65,10 +65,7 @@ export default function HomePage() {
             </h3>
             <p>
               Delux (Affiliate Platform) is government-approved, ensuring safety
-              and reliability for all users across Africa.
-              <br />
-              <br />
-              Officially recognized, Delux meets all regulatory standards,
+              and reliability for all users across Africa. Officially recognized, Delux meets all regulatory standards,
               making our services secure and trustworthy for everyone.
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
@@ -82,10 +79,11 @@ export default function HomePage() {
           />
         </div>
       </Container>
+      
+      <Container className="flex flex-col gap-4">
       <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
           <FiClock /> Opportunities
         </Card>
-      <Container className="">
         <Card className="flex flex-col lg:flex-row gap-5 items-center lg:items-start">
           <Image
             src="/promo-image.jpg"
@@ -139,37 +137,7 @@ export default function HomePage() {
         </Card>
       </Container>
 
-      <Container className="space-y-5">
-        <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
-          <FaTiktok /> Monetize your socials
-        </Card>
-        <div className="flex flex-col lg:flex-row gap-6  items-center lg:items-stretch justify-center ">
-          <Card className="space-y-4 order-2 lg:order-1">
-            <h3 className="font-bold text-3xl md:text-5xl text-amber-500">
-              Delux + your Tiktok = Cash
-            </h3>
-            <p>
-              Delux is a foreign media brand that has been paying her users for
-              simply watching, liking and sharing their videos on social media
-              platforms.
-              <br />
-              <br />
-              Youll earn in Euros and Delux will convert the earnings to Naira
-              and pay straight to your local bank account. Earn extra cash
-              during your free time from streaming music to earn & watching
-              short movie clips to earn extra cash too.
-            </p>
-            <RegisterModal showButton buttonText="Click Here to Register" />
-          </Card>
-          <Image
-            src="/monetize-tiktok.jpg"
-            alt="hero-image"
-            width={500}
-            height={500}
-            className="rounded-3xl order-1 lg:order-2 object-contain flex-1"
-          />
-        </div>
-      </Container>
+      
 
       <Container className="flex flex-col gap-6 justify-center items-center">
         <Card className="inline-flex items-center gap-3 mx-auto px-4 py-2">
@@ -276,14 +244,45 @@ export default function HomePage() {
         </div>
       </Container>
 
-      <Container className="flex flex-col gap-6 justify-center" width="3xl">
+      <Container className="space-y-5">
+        <Card className="flex items-center gap-3 mx-auto px-4 py-2 w-max">
+          <FaTiktok /> Monetize your socials
+        </Card>
+        <div className="flex flex-col lg:flex-row gap-6  items-center lg:items-stretch justify-center ">
+          <Card className="space-y-4 order-2 lg:order-1">
+            <h3 className="font-bold text-3xl md:text-5xl text-amber-500">
+              Delux + your Tiktok = Cash
+            </h3>
+            <p>
+              Delux is a foreign media brand that has been paying her users for
+              simply watching, liking and sharing their videos on social media
+              platforms.
+              <br />
+              <br />
+              Youll earn in Euros and Delux will convert the earnings to Naira
+              and pay straight to your local bank account. Earn extra cash
+              during your free time from streaming music to earn & watching
+              short movie clips to earn extra cash too.
+            </p>
+            <RegisterModal showButton buttonText="Click Here to Register" />
+          </Card>
+          <Image
+            src="/monetize-tiktok.jpg"
+            alt="hero-image"
+            width={500}
+            height={500}
+            className="rounded-3xl order-1 lg:order-2 object-contain flex-1"
+          />
+        </div>
+      </Container>
+      {/* <Container className="flex flex-col gap-6 justify-center" width="3xl">
         <Card className="inline-flex items-center gap-3 mx-auto px-4 py-2">
           <FiMail /> Contact Us
         </Card>
         <Card>
           <ContactForm />
         </Card>
-      </Container>
+      </Container> */}
     </main>
   );
 }

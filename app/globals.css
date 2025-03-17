@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply text-black bg-slate-50;
+  @apply text-black bg-white;
+}
+h3,p,span,h2{
+  color: black !important;
 }
