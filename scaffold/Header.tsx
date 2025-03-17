@@ -9,7 +9,7 @@ import { FiUserPlus } from "react-icons/fi";
 const Header = () => {
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   return (
-    <header className=" sticky top-0 bg-black z-50">
+    <header className=" sticky top-0 bg-white z-50 border-b">
       <Container className="flex justify-between py-2">
         <Link href="/">
           <Image
