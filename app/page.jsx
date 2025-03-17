@@ -4,7 +4,7 @@ import Container from "@/components/elements/Container";
 import RegisterModal from "@/components/RegisterModal";
 import Image from "next/image";
 import Link from "next/link";
-import { FaEarthAfrica, FaTiktok, FaCreditCard } from "react-icons/fa6";
+import { FaEarthAfrica, FaTiktok } from "react-icons/fa6";
 import { FiClock, FiMail } from "react-icons/fi";
 import { RiCoupon3Line } from "react-icons/ri";
 
@@ -69,7 +69,7 @@ export default function HomePage() {
               <br />
               <br />
               Officially recognized, Delux meets all regulatory standards,
-              making our services secure and trustworthy for everyone."
+              making our services secure and trustworthy for everyone.
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
@@ -154,10 +154,10 @@ export default function HomePage() {
               platforms.
               <br />
               <br />
-              You'll earn in Euros and Delux will convert the earnings to Naira
+              Youll earn in Euros and Delux will convert the earnings to Naira
               and pay straight to your local bank account. Earn extra cash
               during your free time from streaming music to earn & watching
-              short movie clips to earn extra cash too.
+              short movie clips to earn extra cash too.
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
