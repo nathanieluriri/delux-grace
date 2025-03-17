@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /secret-page
+Disallow: /admin
+
+# Host
+Host: https://www.phenomnet.ng
+
+# Sitemaps
+Sitemap: https://www.phenomnet.ng/sitemap.xml
