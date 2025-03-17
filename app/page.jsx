@@ -1,11 +1,11 @@
-import ContactForm from "@/components/ContactForm";
+// import ContactForm from "@/components/ContactForm";
 import Card from "@/components/elements/Card";
 import Container from "@/components/elements/Container";
 import RegisterModal from "@/components/RegisterModal";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEarthAfrica, FaTiktok } from "react-icons/fa6";
-import { FiClock, FiMail } from "react-icons/fi";
+import { FiClock } from "react-icons/fi";
 import { RiCoupon3Line } from "react-icons/ri";
 
 export default function HomePage() {
