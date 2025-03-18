@@ -17,7 +17,7 @@ import Autoplay from "embla-carousel-autoplay";
 export function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 13000 })]); // Autoplay every 3s
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [slides, setSlides] = useState([0, 1,]); // Dummy slides
+  const [slides, ] = useState([0, 1,]); // Dummy slides
 
   // Handle Next and Prev
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
