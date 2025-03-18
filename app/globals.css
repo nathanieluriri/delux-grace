@@ -8,3 +8,13 @@ body {
 h3,p,span,h2{
   color: black !important;
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
