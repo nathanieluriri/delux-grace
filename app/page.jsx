@@ -12,86 +12,86 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-function EmblaCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 13000 }),
-  ]); // Autoplay every 3s
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [slides] = useState([0, 1]); // Dummy slides
+// function EmblaCarousel() {
+//   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+//     Autoplay({ delay: 13000 }),
+//   ]); // Autoplay every 3s
+//   const [selectedIndex, setSelectedIndex] = useState(0);
+//   const [slides] = useState([0, 1]); // Dummy slides
 
-  // Handle Next and Prev
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  );
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
-  );
+//   // Handle Next and Prev
+//   const scrollPrev = useCallback(
+//     () => emblaApi && emblaApi.scrollPrev(),
+//     [emblaApi]
+//   );
+//   const scrollNext = useCallback(
+//     () => emblaApi && emblaApi.scrollNext(),
+//     [emblaApi]
+//   );
 
-  // Track the selected slide for dots navigation
-  useEffect(() => {
-    if (!emblaApi) return;
-    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
-    emblaApi.on("select", onSelect);
-    onSelect();
-  }, [emblaApi]);
-  const listOfImages = ["/ghana.jpg", "/cameroon.jpg"];
-  return (
-    <div className="relative w-full max-w-[500px]  mx-auto">
-      {/* Carousel */}
-      <div className="overflow-hidden " ref={emblaRef}>
-        <div className="flex w-full">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className=" flex-[0_0_100%] w-full pr-20 bg-contain  p-4 flex m-auto justify-self-center items-center justify-center h-full text-white text-2xl font-bold rounded-lg"
-              style={{
-                backgroundColor: index % 2 === 0 ? "#FFFFFF" : "#FFFFFF",
-              }} // Alternate colors
-            >
-              Slide {slide}
-              <Image
-                src={listOfImages[slide]}
-                alt="hero-image"
-                width={500}
-                height={500}
-                className="rounded-xl object-cover w flex-1"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+//   // Track the selected slide for dots navigation
+//   useEffect(() => {
+//     if (!emblaApi) return;
+//     const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+//     emblaApi.on("select", onSelect);
+//     onSelect();
+//   }, [emblaApi]);
+//   const listOfImages = ["/ghana.jpg", "/cameroon.jpg"];
+//   return (
+//     <div className="relative w-full max-w-[500px]  mx-auto">
+//       {/* Carousel */}
+//       <div className="overflow-hidden " ref={emblaRef}>
+//         <div className="flex w-full">
+//           {slides.map((slide, index) => (
+//             <div
+//               key={index}
+//               className=" flex-[0_0_100%] w-full pr-20 bg-contain  p-4 flex m-auto justify-self-center items-center justify-center h-full text-white text-2xl font-bold rounded-lg"
+//               style={{
+//                 backgroundColor: index % 2 === 0 ? "#FFFFFF" : "#FFFFFF",
+//               }} // Alternate colors
+//             >
+//               Slide {slide}
+//               <Image
+//                 src={listOfImages[slide]}
+//                 alt="hero-image"
+//                 width={500}
+//                 height={500}
+//                 className="rounded-xl object-cover w flex-1"
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
 
-      {/* Next & Prev Buttons */}
-      <button
-        onClick={scrollPrev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
-      >
-        <FiArrowLeft color="black" />
-      </button>
-      <button
-        onClick={scrollNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
-      >
-        <FiArrowRight color="black" />
-      </button>
+//       {/* Next & Prev Buttons */}
+//       <button
+//         onClick={scrollPrev}
+//         className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
+//       >
+//         <FiArrowLeft color="black" />
+//       </button>
+//       <button
+//         onClick={scrollNext}
+//         className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
+//       >
+//         <FiArrowRight color="black" />
+//       </button>
 
-      {/* Dots Navigation */}
-      <div className="flex justify-center  mt-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 mx-1 rounded-full transition-colors ${
-              index === selectedIndex ? "bg-black" : "bg-gray-300"
-            }`}
-            onClick={() => emblaApi?.scrollTo(index)}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+//       {/* Dots Navigation */}
+//       <div className="flex justify-center  mt-4">
+//         {slides.map((_, index) => (
+//           <button
+//             key={index}
+//             className={`w-3 h-3 mx-1 rounded-full transition-colors ${
+//               index === selectedIndex ? "bg-black" : "bg-gray-300"
+//             }`}
+//             onClick={() => emblaApi?.scrollTo(index)}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 function EmblaCarousel2() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
