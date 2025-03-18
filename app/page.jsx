@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaEarthAfrica, FaTiktok } from "react-icons/fa6";
 import { FiClock, FiArrowRight, FiArrowLeft } from "react-icons/fi";
-import { FiClock, FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import { RiCoupon3Line } from "react-icons/ri";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
