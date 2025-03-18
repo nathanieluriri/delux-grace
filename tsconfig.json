@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "next.config.js",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "app/(admin)/admin/layout.jsx"
   ],
   "exclude": ["node_modules"]
 }
