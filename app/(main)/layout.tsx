@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
 import Header from "@/scaffold/Header";
 import Footer from "@/scaffold/Footer";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://affiliatemarketing.com.ng"),
   title: {
     template: "%s — Delux",
     default: "Delux",

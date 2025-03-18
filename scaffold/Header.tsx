@@ -16,7 +16,7 @@ const Header = () => {
             src="/logo.png"
             alt="Phenom logo"
             width={200}
-            height={200}
+            height={90}
             className=" w-[7rem]"
           />
         </Link>

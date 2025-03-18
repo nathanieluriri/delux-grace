@@ -103,8 +103,14 @@ function EmblaCarousel2() {
   const listOfImages = ["/ghana.jpg", "/cameroon.jpg"];
 
   // Navigation functions
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+  const scrollPrev = useCallback(
+    () => emblaApi && emblaApi.scrollPrev(),
+    [emblaApi]
+  );
+  const scrollNext = useCallback(
+    () => emblaApi && emblaApi.scrollNext(),
+    [emblaApi]
+  );
 
   // Track active slide for dots
   useEffect(() => {
@@ -277,7 +283,7 @@ export default function HomePage() {
               </p>
               <p>
                 <span className="text-amber-500">5.</span> Earn N3,000 (€1.20)
-                by sending reviews daily
+                by sending reviews daily
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -385,8 +391,7 @@ export default function HomePage() {
               - Google ads
               <br />
               - Affiliate marketing
-              <br />
-              - video editing
+              <br />- video editing
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
