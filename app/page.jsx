@@ -400,7 +400,7 @@ export default function HomePage() {
         </div>
       </Container>
 
-      <Container className="flex flex-col gap-0 justify-center items-center">
+      <Container className="flex flex-col gap-6 justify-center items-center">
         <Card className="sm:inline-flex items-center gap-3 mx-auto hidden  px-4 py-2">
           <FaEarthAfrica />
           DELUX IS GLOBAL! (For All African Countries)
