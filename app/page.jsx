@@ -316,10 +316,12 @@ export default function HomePage() {
       </Container>
 
       <Container className="flex flex-col gap-0 justify-center items-center">
-        <Card className="inline-flex items-center gap-3 mx-auto px-4 py-2">
+        <Card className="sm:inline-flex items-center gap-3 mx-auto hidden  px-4 py-2">
           <FaEarthAfrica />DELUX IS GLOBAL! (For All African Countries)
         </Card>
-
+        <Card className="inline-flex items-center gap-3 mx-auto sm:hidden px-4 py-2">
+          <FaEarthAfrica />DELUX IS GLOBAL! 
+        </Card>
         <EmblaCarousel/>
       </Container>
 
