@@ -36,11 +36,11 @@ const RegisterModal: FC<Props> = ({
         setIsOpen={setExternalIsOpen ? setExternalIsOpen : setIsOpen}
       >
         <p>
-          Message one of our verified agents on telegram for your{" "}
+          Message one of our verified agents on telegram / whatsApp for your{" "}
           <span className="text-amber-500">Delux</span> registration
         </p>
         <Link
-          href="https://t.me/earnbigonDelux"
+          href="#"
           target="_blank"
           className="bg-amber-500 rounded-xl text-white px-3 py-2 inline-flex justify-center items-center gap-2 flex-1"
         >
@@ -54,12 +54,12 @@ const RegisterModal: FC<Props> = ({
         </p>
         <div className="flex gap-3 justify-center mt-4 text-sm">
           <Link
-            href="https://t.me/earnbigonDelux"
+            href="#"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
               src="/telegram-logo.png"
-              alt="whatsapp logo"
+              alt="telegram logo"
               height={100}
               width={100}
               className="w-8"
@@ -67,7 +67,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-amber-500">Telegram</p>
           </Link>
           <Link
-            href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Delux%20Registration%20Fee.%20"
+            href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image

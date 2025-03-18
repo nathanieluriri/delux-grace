@@ -22,7 +22,7 @@ const Footer = ({}) => {
           <p className="text-sm ">
             All rights reserved @Phenom {new Date().getFullYear()}
           </p>
-          <Link href="/privacy-policy" className="underline text-sm">
+          <Link href="#" className="underline text-sm">
             Privacy Policy
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Footer = ({}) => {
           <p className="">Connect With Us</p>
           <div className="flex gap-3">
             <Link
-              href="https://Wa.me/+2348104124886?text=Hello!%20Coach%20I'm%20Ready%20To%20Pay%20For%20Phenom%20Registration%20Fee.%20"
+              href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
               target="_blank"
               className="group"
             >
@@ -39,7 +39,7 @@ const Footer = ({}) => {
                 <FaWhatsapp size={23} />
               </Card>
             </Link>
-            <Link href="https://t.me/earnbigonphenom" className="group">
+            <Link href="#" className="group">
               <Card className="p-2 !px-2 rounded-xl group-hover:bg-amber-500 transition-all duration-150 group-hover:rounded-full">
                 <FaTelegramPlane size={23} />
               </Card>
