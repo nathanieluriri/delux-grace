@@ -59,7 +59,7 @@ function EmblaCarousel() {
       <button onClick={scrollPrev} className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full">
       <FiArrowLeft color="black" />
       </button>
-      <button onClick={scrollNext} className="absolute right-[10] top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full">
+      <button onClick={scrollNext} className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full">
       <FiArrowRight color="black" />
       </button>
 
