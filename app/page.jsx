@@ -6,22 +6,28 @@ import RegisterModal from "@/components/RegisterModal";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEarthAfrica, FaTiktok } from "react-icons/fa6";
-import { FiClock,FiArrowRight, FiArrowLeft } from "react-icons/fi";
+import { FiClock, FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import { RiCoupon3Line } from "react-icons/ri";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-
-
 function EmblaCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 13000 })]); // Autoplay every 3s
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 13000 }),
+  ]); // Autoplay every 3s
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [slides, ] = useState([0, 1,]); // Dummy slides
+  const [slides] = useState([0, 1]); // Dummy slides
 
   // Handle Next and Prev
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+  const scrollPrev = useCallback(
+    () => emblaApi && emblaApi.scrollPrev(),
+    [emblaApi]
+  );
+  const scrollNext = useCallback(
+    () => emblaApi && emblaApi.scrollNext(),
+    [emblaApi]
+  );
 
   // Track the selected slide for dots navigation
   useEffect(() => {
@@ -30,7 +36,7 @@ function EmblaCarousel() {
     emblaApi.on("select", onSelect);
     onSelect();
   }, [emblaApi]);
-  const listOfImages =["/ghana.jpg","/cameroon.jpg"]
+  const listOfImages = ["/ghana.jpg", "/cameroon.jpg"];
   return (
     <div className="relative w-full max-w-[500px]  mx-auto">
       {/* Carousel */}
@@ -39,28 +45,36 @@ function EmblaCarousel() {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className=" flex-[0_0_100%] w-full pr-20 bg-contain  p-4 flex m-auto justify-self-center items-center justify-center h-full text-white text-2xl font-bold rounded-lg"
-              style={{ backgroundColor: index % 2 === 0 ? "#FFFFFF" : "#FFFFFF" }} // Alternate colors
+              className=" flex-[0_0_100%] w-full bg-contain flex m-auto justify-self-center items-center justify-center h-full text-white text-2xl font-bold rounded-lg"
+              style={{
+                backgroundColor: index % 2 === 0 ? "#FFFFFF" : "#FFFFFF",
+              }} // Alternate colors
             >
               Slide {slide}
               <Image
-            src={listOfImages[slide]}
-            alt="hero-image"
-            width={500}
-            height={500}
-            className="rounded-xl object-cover w flex-1"
-          />
+                src={listOfImages[slide]}
+                alt="hero-image"
+                width={500}
+                height={500}
+                className="rounded-xl object-cover w flex-1"
+              />
             </div>
           ))}
         </div>
       </div>
 
       {/* Next & Prev Buttons */}
-      <button onClick={scrollPrev} className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full">
-      <FiArrowLeft color="black" />
+      <button
+        onClick={scrollPrev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
+      >
+        <FiArrowLeft color="black" />
       </button>
-      <button onClick={scrollNext} className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full">
-      <FiArrowRight color="black" />
+      <button
+        onClick={scrollNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-zinc-300 text-white p-2 rounded-full"
+      >
+        <FiArrowRight color="black" />
       </button>
 
       {/* Dots Navigation */}
@@ -68,7 +82,9 @@ function EmblaCarousel() {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 mx-1 rounded-full transition-colors ${index === selectedIndex ? "bg-black" : "bg-gray-300"}`}
+            className={`w-3 h-3 mx-1 rounded-full transition-colors ${
+              index === selectedIndex ? "bg-black" : "bg-gray-300"
+            }`}
             onClick={() => emblaApi?.scrollTo(index)}
           />
         ))}
@@ -77,11 +93,9 @@ function EmblaCarousel() {
   );
 }
 
-
 export default function HomePage() {
   return (
     <main className="space-y-16">
-     
       <Container className="">
         <Card className="flex flex-col lg:flex-row gap-5 items-center lg:items-start">
           <Image
@@ -192,7 +206,7 @@ export default function HomePage() {
               </p>
               <p>
                 <span className="text-amber-500">5.</span> Earn N3,000 (€1.20)
-                by sending reviews daily
+                by sending reviews daily
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -300,8 +314,7 @@ export default function HomePage() {
               - Google ads
               <br />
               - Affiliate marketing
-              <br />
-              - video editing
+              <br />- video editing
             </p>
             <RegisterModal showButton buttonText="Click Here to Register" />
           </Card>
@@ -317,10 +330,11 @@ export default function HomePage() {
 
       <Container className="flex flex-col gap-0 justify-center items-center">
         <Card className="inline-flex items-center gap-3 mx-auto px-4 py-2">
-          <FaEarthAfrica />DELUX IS GLOBAL! (For All African Countries)
+          <FaEarthAfrica />
+          DELUX IS GLOBAL! (For All African Countries)
         </Card>
 
-        <EmblaCarousel/>
+        <EmblaCarousel />
       </Container>
 
       <Container className="space-y-5">

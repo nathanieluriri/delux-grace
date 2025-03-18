@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
 import Header from "@/scaffold/Header";
 import Footer from "@/scaffold/Footer";
 
@@ -16,6 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://affiliatemarketing.com.ng"),
   title: {
     template: "%s — Delux",
     default: "Delux",
