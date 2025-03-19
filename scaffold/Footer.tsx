@@ -2,7 +2,7 @@ import Card from "@/components/elements/Card";
 import Container from "@/components/elements/Container";
 import Image from "next/image";
 import Link from "next/link";
-import { FaTelegramPlane } from "react-icons/fa";
+// import { FaTelegramPlane } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = ({}) => {
@@ -39,11 +39,12 @@ const Footer = ({}) => {
                 <FaWhatsapp size={23} />
               </Card>
             </Link>
-            <Link href="https://delux-grace-api.vercel.app/TelegramLink" className="group">
+            {/* telegram footer link is below */}
+            {/* <Link href="https://delux-grace-api.vercel.app/Telegramlink" className="group">
               <Card className="p-2 !px-2 rounded-xl group-hover:bg-amber-500 transition-all duration-150 group-hover:rounded-full">
                 <FaTelegramPlane size={23} />
               </Card>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Container>

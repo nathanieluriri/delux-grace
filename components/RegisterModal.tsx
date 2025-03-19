@@ -53,8 +53,9 @@ const RegisterModal: FC<Props> = ({
           <span className="text-amber-500">Delux</span> works.
         </p>
         <div className="flex gap-3 justify-center mt-4 text-sm">
-          <Link
-            href="https://delux-grace-api.vercel.app/TelegramLink"
+          {/* Telegram stuff is below */}
+          {/* <Link
+            href="https://delux-grace-api.vercel.app/Telegramlink"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image
@@ -65,7 +66,7 @@ const RegisterModal: FC<Props> = ({
               className="w-8"
             />
             <p className="group-hover:text-amber-500">Telegram</p>
-          </Link>
+          </Link> */}
           <Link
             href="https://delux-grace-api.vercel.app/whatsApplink"
             className="flex flex-col items-center gap-2 flex-1 group"
