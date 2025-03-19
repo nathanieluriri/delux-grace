@@ -67,7 +67,7 @@ const RegisterModal: FC<Props> = ({
             <p className="group-hover:text-amber-500">Telegram</p>
           </Link>
           <Link
-            href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
+            href="https://delux-grace-api.vercel.app/whatsApplink"
             className="flex flex-col items-center gap-2 flex-1 group"
           >
             <Image

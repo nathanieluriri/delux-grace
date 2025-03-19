@@ -115,7 +115,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
+                  href="https://delux-grace-api.vercel.app/whatsApplink"
                   className="bg-transparent border border-amber-500 rounded-xl text-amber-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-amber-500 hover:text-white"
                 >
                   Get Job Permit Now!
@@ -201,7 +201,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
+                  href="https://delux-grace-api.vercel.app/whatsApplink"
                   className="bg-transparent border border-amber-500 rounded-xl text-amber-500 px-3 py-2 inline-flex justify-center items-center gap-2 flex-1 transition-colors hover:bg-amber-500 hover:text-white"
                 >
                   Get Job Permit Now!

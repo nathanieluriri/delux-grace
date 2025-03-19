@@ -31,7 +31,7 @@ const Footer = ({}) => {
           <p className="">Connect With Us</p>
           <div className="flex gap-3">
             <Link
-              href="https://wa.me/2347042396068?text=hello+i+want+to+register+on+delux"
+              href="https://delux-grace-api.vercel.app/whatsApplink"
               target="_blank"
               className="group"
             >
