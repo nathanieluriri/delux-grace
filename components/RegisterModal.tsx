@@ -36,7 +36,7 @@ const RegisterModal: FC<Props> = ({
         setIsOpen={setExternalIsOpen ? setExternalIsOpen : setIsOpen}
       >
         <p>
-          Message one of our verified agents on telegram / whatsApp for your{" "}
+          Message one of our verified agents on whatsApp for your{" "}
           <span className="text-amber-500">Delux</span> registration
         </p>
         <Link
