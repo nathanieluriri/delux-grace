@@ -40,7 +40,7 @@ const RegisterModal: FC<Props> = ({
           <span className="text-amber-500">Delux</span> registration
         </p>
         <Link
-          href="https://delux-grace-api.vercel.app/TelegramLink"
+         href="https://delux-grace-api.vercel.app/whatsApplink"
           target="_blank"
           className="bg-amber-500 rounded-xl text-white px-3 py-2 inline-flex justify-center items-center gap-2 flex-1"
         >
@@ -70,6 +70,7 @@ const RegisterModal: FC<Props> = ({
           <Link
             href="https://delux-grace-api.vercel.app/whatsApplink"
             className="flex flex-col items-center gap-2 flex-1 group"
+            target="_blank"
           >
             <Image
               src="/whatsapp-logo.png"
